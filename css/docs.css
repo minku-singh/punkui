@@ -64,6 +64,7 @@ body{
 }
 .info .buttons{
     margin-top: 1em;
+    display: flex;
 }
 .info button{
     padding: 1em;
@@ -79,7 +80,7 @@ body{
 
 @media screen and (max-width: 780px){
     .brand-text{
-        font-size: 4em;
+        font-size: 2em;
         letter-spacing: 0.1em;
         text-align: center;
         transition: all 0.5s ease;
@@ -92,7 +93,7 @@ body{
         flex-wrap: wrap;
     }
     .logo{
-        margin-top: -4em;
+        margin-top: -3em;
         /* border: 1px solid black; */
         transition: all 1s ease;
         width: 15em;
