@@ -1,0 +1,109 @@
+/* reset ------------------------------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* theme  */
+    --background-dark-primary: #0f044c;
+    --background-dark-shadow: #141e61;
+    --text-color-primary: #eeeeee;
+    --text-color-shadow: #787A91;
+}
+
+.logo{
+    max-width: 100%;
+    /* border: 1px solid black; */
+    height: auto;
+}
+
+body{
+    background-color: var(--background-dark-primary);
+    color: var(--text-color-shadow);
+    font-family: monospace;
+    font-size: 1.7em;
+    height: 100vh;
+}
+
+.container{
+    margin: 1em 3em;
+}
+
+/* main -------------------------- */
+.brand-text{
+    /* border: 1px solid black; */
+    font-size: 8em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.brand-text:hover{
+    color: var(--text-color-primary);
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logo{
+    margin-top: -8em;
+    /* border: 1px solid black; */
+    transition: all 1s ease;
+    width: 20em;
+    height: auto;
+}
+.logo:hover{
+    transform: rotate(20deg);
+}
+
+/* info -----------------------------------------------------*/
+.info{
+    max-width: 40vw;
+    /* border: 1px solid black; */
+}
+.info .buttons{
+    margin-top: 1em;
+}
+.info button{
+    padding: 1em;
+    width: 10em;
+    border-radius: 20px;
+    margin-right: 1em;
+    background-color: var(--text-color-shadow);
+    cursor: pointer;
+}
+.info button:hover{
+    background-color: var(--text-color-primary);
+}
+
+@media screen and (max-width: 780px){
+    .brand-text{
+        font-size: 4em;
+        letter-spacing: 0.1em;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    .flex-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin-top: -4em;
+        /* border: 1px solid black; */
+        transition: all 1s ease;
+        width: 15em;
+        height: auto;
+    }
+    .container{
+        margin: 1em 1.5em;
+    }
+    .info{
+        max-width: 100em;
+        /* border: 1px solid black; */
+        margin-top: 2em;
+    }
+}

@@ -1,0 +1,339 @@
+/* reset  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-weight: bold;
+    --avatar-online: rgb(0, 206, 0);
+    --avatar-dnd: red;
+    --avatar-offline: rgb(192, 192, 192);
+    --alert-success: rgb(100, 255, 100);
+    --alert-danger: rgb(255, 133, 133);
+    --alert-warning: rgb(255, 255, 139);
+    --alert-info: rgb(147, 147, 255);
+}
+img{
+    max-width: 100%;
+}
+
+/* util */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section > *{
+    margin: 2vw;
+}
+
+/* avatar ------------------------------------------------------- */
+.avatar{
+    border-radius: 50%;
+    background-color: rgb(212, 212, 212);
+    position: relative;
+}
+.avatar-xl{
+    width: 4em;
+    height: 4em;
+}
+.avatar-lg{
+    width: 3em;
+    height: 3em;
+}
+.avatar-std{
+    width: 2em;
+    height: 2em;
+}
+.avatar-sm{
+    width: 1.5em;
+    height: 1.5em;
+}
+.avatar-xs{
+    width: 1em;
+    height: 1em;
+}
+
+/* avatar status  */
+.avatar-status{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.001em;
+    right: 0.3em;
+    border: 2.5px solid #fff;
+}
+.dnd{
+    background-color: var(--avatar-dnd);
+}
+.online{
+    background-color: var(--avatar-online);
+}
+.offline{
+    background-color: var(--avatar-offline);
+}
+.avatar-lg > .offline, .avatar-lg > .online, .avatar-lg > .dnd{
+    width: 12px;
+    height: 12px;
+    bottom: 0.001em;
+    right: 0.2em;
+}
+.avatar-std > .offline, .avatar-std > .online, .avatar-std > .dnd{
+    width: 10px;
+    height: 10px;
+    bottom: 0.001em;
+    right: 0.001em;
+}
+
+
+/* alert ----------------------------------------------------------------- */
+.alert{
+    padding: 10px;
+    border-radius: 5px;
+}
+.alert-success{
+    background-color: var(--alert-success);
+}
+.alert-danger{
+    background-color: var(--alert-danger);
+}
+.alert-warning{
+    background-color: var(--alert-warning);
+}.alert-info{
+    background-color: var(--alert-info);
+}
+
+
+/* badge -------------------------------------------------------------------- */
+.badge-count{
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.001em;
+    right: 0.3em;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    font-size: small;
+    padding: 0 0 0 5px;
+    font-weight: bold;
+}
+.avatar-lg > .badge-count{
+    font-size: x-small;
+    width: 12px;
+    height: 12px;
+    bottom: 0.001em;
+    right: 0.2em;
+    padding: 0 0 0 4px;
+}
+.avatar-std > .badge-count{
+    font-size: xx-small;
+    width: 10px;
+    height: 10px;
+    bottom: 0.001em;
+    right: 0.001em;
+    padding: 0 0 0 3px;
+}
+.icon.badge{
+    width: 2em;
+    position: relative;
+}
+.icon > .badge-count{
+    position: absolute;
+    font-size: small;
+    width: 15px;
+    height: 15px;
+    bottom: 1.8em;
+    right: 0;
+    left: 1.8em;
+    padding: 0 0px 0 5px;
+}
+
+/* button ------------------------------------------------------------------ */
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn.btn-primary{
+    background-color: var(--alert-success);
+}
+.btn.btn-secondary{
+    background-color: var(--alert-info);
+}
+.btn.btn-danger{
+    background-color: var(--alert-danger);
+}
+
+.btn.btn-outline-primary{
+    border: 1px solid var(--alert-success);
+    color: var(--alert-success);
+    background-color: #fff;
+}
+.btn.btn-outline-primary:hover{
+    background-color: var(--alert-success);
+    border: 1px solid #fff;
+    color: #fff;
+}
+.btn.btn-outline-secondary{
+    border: 1px solid var(--alert-info);
+    background-color: #fff;
+}
+.btn.btn-outline-secondary:hover{
+    background-color: var(--alert-info);
+    border: 1px solid #fff;
+}
+.btn.btn-outline-danger{
+    border: 1px solid var(--alert-danger);
+    color: var(--alert-danger);
+    background-color: #fff;
+}
+.btn.btn-outline-danger:hover{
+    background-color: var(--alert-danger);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-icon > img{
+    width: 1.8em;
+    height: 1.8em;
+    margin-right: 10px;
+}
+
+/* card ------------------------------------------------------------------ */
+.card{
+    width: 40em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(197, 197, 197);
+    cursor: pointer;
+}
+.card-hz{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1em;
+}
+.card-hz > img{
+    height: 20em;
+    width: 30em;
+    padding-right: 1em;
+    border-radius: 5px;
+}
+.card-heading{
+    font-size: 2em;
+    color: black;
+}
+.card-text > a{
+    text-decoration: none;
+}
+.card-sub-heading{
+    font-size: 1em;
+    color: rgb(122, 122, 122);
+}
+.card-para{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.price{
+    font-size: 2em;
+}
+.price-original{
+    color: rgb(122, 122, 122);
+    text-decoration: line-through;
+}
+.card:hover{
+    box-shadow: 2px 2px 15px rgb(197, 197, 197);
+}
+
+/* image ------------------------------------------------------------- */
+.img-res{
+    width: 100%;
+    height: auto;
+}
+
+.img-round{
+    border-radius: 50%;
+}
+
+/* input ------------------------------------------------------------- */
+.input > input{
+    padding: 10px;
+    min-width: 20em;
+    border-radius: 5px;
+}
+.input{
+    position: relative;
+}
+.input > div{
+    position: absolute;
+    bottom: 2.4em;
+    left: 1em;
+    z-index: 2;
+    background-color: #fff;
+}
+
+/* input validation  */
+.input > input.error{
+    border: 2px solid var(--alert-danger);
+}
+.input > div.error{
+    color: var(--alert-danger);
+}
+
+.input > input.warn{
+    border: 2px solid var(--alert-warning);
+}
+.input > div.warn{
+    color: var(--alert-warning);
+}
+
+.input > input.success{
+    border: 2px solid var(--alert-success);
+}
+.input > div.success{
+    color: var(--alert-success);
+}
+
+input:focus{
+    outline: none;
+}
+
+/* navigation ---------------------------------------------------- */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: black;
+    padding: 1em;
+    border: 2px solid black;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav-link-section{
+    display: flex;
+    list-style: none;
+}
+.nav-link-section li{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+/* toast ----------------------------------------------------------------- */
+.toast{
+    background-color: var(--alert-success);
+    padding: 1.5em;
+    width: 50em;
+    border-radius: 5px;
+    border-left: 10px solid var(--alert-danger);
+}
