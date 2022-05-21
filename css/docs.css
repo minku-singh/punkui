@@ -122,6 +122,9 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .buttons button{
+        margin-bottom: 1em;
+    }
     footer{
         margin-top: 2em;
         text-align: center;
