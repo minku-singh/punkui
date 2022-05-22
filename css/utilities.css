@@ -53,6 +53,6 @@ section > *{
 
 @media screen and (max-width: 780px){
     .container{
-        margin: 0 1em;
+        margin: 0 10px;
     }
 }
