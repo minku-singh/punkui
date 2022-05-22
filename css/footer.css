@@ -14,3 +14,9 @@ footer > p{
 footer > p:hover{
     color: var(--text-color-shadow);
 }
+
+@media screen and (max-width: 780px){
+    footer{
+        width: 100vw;
+    }
+}
