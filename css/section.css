@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 780px){
     .section{
-        width: 100vw;
+        width: auto;
         display: flex;
         flex-direction: column;
     }

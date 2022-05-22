@@ -17,6 +17,7 @@ footer > p:hover{
 
 @media screen and (max-width: 780px){
     footer{
-        width: 100vw;
+        width: 95vw;
+        padding: 2em 1em;
     }
 }

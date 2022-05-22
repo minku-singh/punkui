@@ -10,6 +10,12 @@
     overflow-y: hidden;
 }
 
+@media screen and (max-width: 780px){
+    .component{
+        padding: 2em 1em;
+    }
+}
+
 /* highlight  */
 .highlight{
     background-color: var(--background-dark-shadow);
