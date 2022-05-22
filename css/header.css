@@ -1,0 +1,39 @@
+@import url(./utilities.css);
+
+header{
+    height: 15vh;
+    position: fixed;
+    width: 87.5%;
+    background-color: var(--background-dark-primary);
+    z-index: 10;
+}
+
+header >.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    transition: all 0.5s ease;
+}
+
+header img:hover{
+    transform: rotate(20deg);
+    cursor: pointer;
+}
+
+header .brand-text{
+    letter-spacing: 0.5em;
+    color: var(--text-color-shadow);
+    transition: all 0.5s ease;
+}
+
+header .brand-text:hover{
+    color: var(--text-color-primary);
+}
+
+header img{
+    width: 5em;
+    height: auto;
+}

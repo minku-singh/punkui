@@ -1,0 +1,44 @@
+/* badge -------------------------------------------------------------------- */
+.badge-count{
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.001em;
+    right: 0.3em;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    font-size: small;
+    padding: 0 0 0 5px;
+    font-weight: bold;
+}
+.avatar-lg > .badge-count{
+    font-size: x-small;
+    width: 12px;
+    height: 12px;
+    bottom: 0.001em;
+    right: 0.2em;
+    padding: 0 0 0 4px;
+}
+.avatar-std > .badge-count{
+    font-size: xx-small;
+    width: 10px;
+    height: 10px;
+    bottom: 0.001em;
+    right: 0.001em;
+    padding: 0 0 0 3px;
+}
+.icon.badge{
+    width: 2em;
+    position: relative;
+}
+.icon > .badge-count{
+    position: absolute;
+    font-size: small;
+    width: 15px;
+    height: 15px;
+    bottom: 1.8em;
+    right: 0;
+    left: 1.8em;
+    padding: 0 0px 0 5px;
+}

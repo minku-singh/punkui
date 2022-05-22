@@ -1,0 +1,16 @@
+@import url(./utilities.css);
+
+footer{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 4em;
+}
+
+footer > p{
+    cursor: pointer;
+}
+
+footer > p:hover{
+    color: var(--text-color-shadow);
+}

@@ -1,0 +1,41 @@
+.section{
+    display: flex;
+    height: auto;
+}
+
+.section main, .nav{
+    margin-top: 15vh;
+}
+
+.section main{
+    margin-left: 20vw;
+    margin-top: 13vh;
+}
+
+.section main h1{
+    margin-bottom: 0.5em;
+}
+
+.section main p{
+    line-height: 1.5em;
+}
+
+.section main h2{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 780px){
+    .section{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        display: none;
+    }
+    .section main{
+        margin-left: 0;
+    }
+}

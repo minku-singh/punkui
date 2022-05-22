@@ -1,0 +1,29 @@
+@import url(./utilities.css);
+
+.nav{
+    width: 20vw;
+    padding: 1.5em;
+    position: fixed;
+}
+
+.nav > h1{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.nav p{
+    margin: 0.5em 0;
+    padding: 4px;
+    background-color: var(--background-dark-primary);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.nav p:hover{
+    background-color: var(--background-dark-shadow);
+    color: var(--text-color-shadow);
+}
+.nav .nav-heading{
+    cursor: inherit;
+}

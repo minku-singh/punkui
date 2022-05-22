@@ -27,65 +27,6 @@ section > *{
     margin: 2vw;
 }
 
-/* avatar ------------------------------------------------------- */
-.avatar{
-    border-radius: 50%;
-    background-color: rgb(212, 212, 212);
-    position: relative;
-}
-.avatar-xl{
-    width: 4em;
-    height: 4em;
-}
-.avatar-lg{
-    width: 3em;
-    height: 3em;
-}
-.avatar-std{
-    width: 2em;
-    height: 2em;
-}
-.avatar-sm{
-    width: 1.5em;
-    height: 1.5em;
-}
-.avatar-xs{
-    width: 1em;
-    height: 1em;
-}
-
-/* avatar status  */
-.avatar-status{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 0.001em;
-    right: 0.3em;
-    border: 2.5px solid #fff;
-}
-.dnd{
-    background-color: var(--avatar-dnd);
-}
-.online{
-    background-color: var(--avatar-online);
-}
-.offline{
-    background-color: var(--avatar-offline);
-}
-.avatar-lg > .offline, .avatar-lg > .online, .avatar-lg > .dnd{
-    width: 12px;
-    height: 12px;
-    bottom: 0.001em;
-    right: 0.2em;
-}
-.avatar-std > .offline, .avatar-std > .online, .avatar-std > .dnd{
-    width: 10px;
-    height: 10px;
-    bottom: 0.001em;
-    right: 0.001em;
-}
-
 
 /* alert ----------------------------------------------------------------- */
 .alert{

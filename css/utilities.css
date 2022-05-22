@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* theme  */
+    --background-dark-primary: #0f044c;
+    --background-dark-shadow: #141e61;
+    --text-color-primary: #eeeeee;
+    --text-color-shadow: #787A91;
+
+    /* colors  */
+    --color-success: rgb(17, 255, 17);
+    --color-danger: rgb(255, 17, 17);
+    --color-info: rgb(17, 17, 255);
+    --color-offline: rgb(151, 151, 151);
+    --color-warning: rgb(255, 172, 17);
+}
+
+body{
+    height: 100vh;
+    font-family: monospace;
+    font-size: 1.3em;
+    background-color: var(--background-dark-primary);
+    color: var(--text-color-primary);
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color-primary);
+}
+a:hover{
+    color: var(--text-color-shadow);
+}
+
+.container{
+    margin: 0 5em;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* each component  */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section > *{
+    margin: 2vw;
+}

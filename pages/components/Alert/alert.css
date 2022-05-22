@@ -1,0 +1,24 @@
+@import url(../../../css/utilities.css);
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* alert ----------------------------------------------------------------- */
+.alert{
+    padding: 10px;
+    border-radius: 5px;
+}
+.alert-success{
+    background-color: var(--color-success);
+}
+.alert-danger{
+    background-color: var(--color-danger);
+}
+.alert-warning{
+    background-color: var(--color-warning);
+}.alert-info{
+    background-color: var(--color-info);
+}

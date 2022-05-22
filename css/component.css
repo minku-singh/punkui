@@ -1,0 +1,19 @@
+@import url(./utilities.css);
+
+.component{
+    padding: 2em 4em;
+    max-width: 50em;
+}
+
+.code-snippet{
+    margin: 2em 0 0 0;
+    overflow-y: hidden;
+}
+
+/* highlight  */
+.highlight{
+    background-color: var(--background-dark-shadow);
+    color: var(--text-color-shadow);
+    padding: 2px;
+    border-radius: 5px;
+}
