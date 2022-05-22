@@ -41,6 +41,7 @@ header img{
 @media screen and (max-width: 780px){
     header{
         width: 95vw;
+        height: 12vh;
     }
     header .brand-text{
         letter-spacing: 0.2em;
