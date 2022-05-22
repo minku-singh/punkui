@@ -42,4 +42,7 @@ header img{
     header{
         width: 95vw;
     }
+    header .brand-text{
+        letter-spacing: 0.2em;
+    }
 }
