@@ -1,0 +1,47 @@
+@import url(../../../css/utilities.css);
+
+/* input ------------------------------------------------------------- */
+.input > input{
+    padding: 10px;
+    min-width: 20em;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid var(--color-offline);
+}
+.input{
+    position: relative;
+}
+.input > div{
+    position: absolute;
+    bottom: 1.8em;
+    left: 1em;
+    z-index: 2;
+    background-color: var(--background-dark-primary);
+    z-index: 3;
+}
+
+/* input validation  */
+.input > input.error{
+    border: 2px solid var(--color-danger);
+}
+.input > div.error{
+    color: var(--color-danger);
+}
+
+.input > input.warn{
+    border: 2px solid var(--color-warning);
+}
+.input > div.warn{
+    color: var(--color-warning);
+}
+
+.input > input.success{
+    border: 2px solid var(--color-success);
+}
+.input > div.success{
+    color: var(--color-success);
+}
+
+input:focus{
+    outline: none;
+}

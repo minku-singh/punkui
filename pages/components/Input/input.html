@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../../css/nav.css">
     <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="../../../css/component.css">
+    <link rel="stylesheet" href="./input.css">
     <title>Input</title>
 </head>
 <body>
@@ -36,25 +37,62 @@
                 <a href="../Card/card.html"><p>Card</p></a>
                 <a href="../Image/image.html"><p>Image</p></a>
                 <a style="color: #787A91;" href="../Input/input.html"><p style="background-color: #141e61;">Input</p></a>
-                <a href="../List/list.html"><p>List</p></a>
-                <a href="../Navigation/navigation.html"><p>Navigation</p></a>
+                <!-- <a href="../List/list.html"><p>List</p></a>
+                <a href="../Navigation/navigation.html"><p>Navigation</p></a> -->
                 <a href="../Toast/toast.html"><p>Toast</p></a>
             </div>
 
             <!-- differing part  -------------------------------------------------------->
             <main>
                 <div class="component">
-                    <h1>Usage</h1>
-                    <p>To start using the components in your project import the stylesheet in your css or html file.</p>
+                    <h1>Input</h1>
+                    <p>Take input from user.</p>
+
+                    <!-- input  ---------------------------------------------------->
+                    <h2>Standard Input</h2>
+                    <section>
+                        <div class="input">
+                            <input type="text">
+                            <div>Label</div>
+                        </div>
+                    </section>
 
                     <iframe 
-                        class="code-snippet"
-                        src="https://www.thiscodeworks.com/embed/62890a20e32f2d001518d164" 
-                        style="width: 100%; height: 115px;" 
+                        src="https://www.thiscodeworks.com/embed/628ae0fe0b60ca0015a882a5" 
+                        style="width: 100%; height: 164px;" 
                         frameborder="0"
+                        class="code-snippet"
                     ></iframe>
 
-                    <p>You can also import individual components if you only need a few of them. The links to import individual components can be found in their respective pages.</p>
+                    <!-- input validation  -->
+                    <h2>Validation</h2>
+                    <p>There are 3 types of input validation available apart from the default one <span class="highlight">error</span>, <span class="highlight">warn</span> and <span class="highlight">success</span>.</p>
+                    <section>
+                        <div class="input">
+                            <input class="error" type="text">
+                            <div class="error">Label</div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="input">
+                            <input class="warn" type="text">
+                            <div class="warn">Label</div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="input">
+                            <input class="success" type="text">
+                            <div class="success">Label</div>
+                        </div>
+                    </section>
+
+                    <iframe 
+                        src="https://www.thiscodeworks.com/embed/628ae2220b60ca0015a882a6" 
+                        style="width: 100%; height: 268px;" 
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
                 </div>
                 <footer>
                     <a href="../Image/image.html"><p>&lt; Image</p></a>

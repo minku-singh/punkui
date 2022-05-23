@@ -1,0 +1,21 @@
+/* navigation ---------------------------------------------------- */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    color: black;
+    padding: 1em;
+    border: 2px solid black;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+}
+.navigation-link-section{
+    display: flex;
+    list-style: none;
+}
+.navigation-link-section li{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
