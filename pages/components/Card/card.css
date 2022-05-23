@@ -1,6 +1,7 @@
 /* card ------------------------------------------------------------------ */
 .card{
-    width: 40em;
+    width: 30em;
+    height: 20em;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgb(197, 197, 197);
     cursor: pointer;
@@ -12,13 +13,14 @@
     padding: 1em;
 }
 .card-hz > img{
-    height: 20em;
+    size: cover;
     width: 30em;
     padding-right: 1em;
     border-radius: 5px;
+    max-width: 100%;
 }
 .card-heading{
-    font-size: 2em;
+    font-size: 1.5em;
     color: #fff;
 }
 .card-text > a{
@@ -41,4 +43,16 @@
 }
 .card:hover{
     box-shadow: 2px 2px 15px rgb(197, 197, 197);
+}
+
+@media screen and (max-width: 780px){
+    .card-heading{
+        font-size: 1em;
+    }
+    .card-sub-heading{
+        font-size: 0.7em;
+    }
+    .card-para{
+        font-size: 0.5em;
+    }
 }
