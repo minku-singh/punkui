@@ -46,6 +46,9 @@
 }
 
 @media screen and (max-width: 780px){
+    .card{
+        height: 13em;
+    }
     .card-hz{
         padding: 10px;
     }
@@ -61,5 +64,8 @@
     .card-hz > img{
         width: 30vw;
         padding-right: 5px;
+    }
+    .price{
+        font-size: 1em;
     }
 }
