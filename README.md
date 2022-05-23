@@ -1,3 +1,5 @@
+An elegant CSS library to build fast and responsive apps. 
+
 ## About 
 Punk UI is a CSS library to build elegant and responsive apps.
 
