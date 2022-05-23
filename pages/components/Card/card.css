@@ -46,6 +46,9 @@
 }
 
 @media screen and (max-width: 780px){
+    .card-hz{
+        padding: 10px;
+    }
     .card-heading{
         font-size: 1em;
     }
@@ -54,5 +57,9 @@
     }
     .card-para{
         font-size: 0.5em;
+    }
+    .card-hz > img{
+        width: 30vw;
+        padding-right: 5px;
     }
 }
